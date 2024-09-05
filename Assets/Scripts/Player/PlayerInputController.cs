@@ -72,15 +72,13 @@ public class PlayerInputController : MonoBehaviour
         if(!isGrounded)
             return;
 
-        Vector3 jumpForce = new Vector3(0f, 15f, 0f);
+        Vector3 jumpForce = new Vector3(0f, 30f, 0f);
 
         rb.AddForce(jumpForce, ForceMode.Impulse);
     }
 
     void FixedUpdate()
     {
-
-        int layer_mask = LayerMask.GetMask("boat");
         Debug.DrawRay(transform.position, cameraObj.transform.forward * interactRange, Color.green);
         //Ship movement
         if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, distanceToFloor))
@@ -133,7 +131,7 @@ public class PlayerInputController : MonoBehaviour
         var rightMove = moveDirection.x;
 
         Vector3 movement3d = transform.forward * forwardMove + transform.right * rightMove;
-        rb.AddForce(movement3d.normalized * moveSpeed, ForceMode.Impulse);
+        rb.AddForce(movement3d.normalized * moveSpeed, ForceMode.Force);
 
 
         // Clamp Speed

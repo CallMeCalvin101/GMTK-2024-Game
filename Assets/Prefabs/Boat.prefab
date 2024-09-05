@@ -489,7 +489,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72e6fa0a25c706e418b928386c35d2cd, type: 2}
+  - {fileID: 2100000, guid: e7fd1926376ddab45a0b8a3d03bd23b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -606,6 +606,7 @@ MonoBehaviour:
   shipRb: {fileID: 1683421533}
   standingPosition: {fileID: 1155752940615430792}
   maxSpeed: 10
+  minSpeedToTurn: 1
   forwardAcceleration: 2
   maxTurnSpeed: 1
   turningPointRef: {fileID: 1155752940615430792}
@@ -684,7 +685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72e6fa0a25c706e418b928386c35d2cd, type: 2}
+  - {fileID: 2100000, guid: e7fd1926376ddab45a0b8a3d03bd23b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -879,7 +880,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72e6fa0a25c706e418b928386c35d2cd, type: 2}
+  - {fileID: 2100000, guid: e7fd1926376ddab45a0b8a3d03bd23b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1170,7 +1171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72e6fa0a25c706e418b928386c35d2cd, type: 2}
+  - {fileID: 2100000, guid: e7fd1926376ddab45a0b8a3d03bd23b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
